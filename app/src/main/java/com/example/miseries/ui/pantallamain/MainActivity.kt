@@ -1,6 +1,7 @@
-package com.example.miseries
+package com.example.miseries.ui.pantallamain
 
 import android.os.Bundle
+import androidx.activity.R
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat

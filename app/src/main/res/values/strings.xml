@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MiSeries</string>
+    <string name="a_adir_serie">Añadir serie</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="temporadas">Temporadas</string>
+    <string name="nombre_de_la_serie">NOMBRE DE LA SERIE</string>
+    <string name="serie">SERIE</string>
+    <string name="borrar_serie">Borrar serie</string>
+    <string name="ver_listado">Ver listado</string>
+    <string name="a_adir_descripcion">Añadir descripcion</string>
 </resources>

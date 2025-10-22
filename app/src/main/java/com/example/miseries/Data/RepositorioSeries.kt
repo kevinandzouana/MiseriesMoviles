@@ -20,8 +20,19 @@ object RepositorioSeries {
 
     fun getSeries(): List<Serie> = series.toList()
 
-    fun borrarSerie(serie: Serie) {
-        series.removeIf { it.titulo== serie.titulo }
+    fun borrarSerie(serie: Serie): Boolean {
+       return series.removeIf { it.titulo== serie.titulo }
 
+    }
+    fun updateSerie(descripcionAntigua: String, descripcionNueva: String): Boolean {
+        val serieIndex = series.indexOfFirst { it.descripcion == descripcionAntigua }
+        return if (serieIndex != -1) { // <- debe ser -1, no 1
+            val serieActual = series[serieIndex]
+            val serieActualizada = serieActual.copy(descripcion = descripcionNueva)
+            series[serieIndex] = serieActualizada
+            true
+        } else {
+            false
+        }
     }
 }
