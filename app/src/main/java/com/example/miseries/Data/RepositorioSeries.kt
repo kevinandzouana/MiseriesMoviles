@@ -16,9 +16,20 @@ object RepositorioSeries {
 
     fun getSerie(id:Int) = series[id]
 
-    fun addSerie(serie: Serie)= series.add(serie)
+    fun addSerie(serie: Serie): Boolean {
+        // Verificar si ya existe una serie con el mismo título
+        val yaExiste = series.any { it.titulo.equals(serie.titulo, ignoreCase = true) }
+        return if (!yaExiste) {
+            series.add(serie)
+        } else {
+            false // No se agrega si ya existe
+        }
+    }
 
-    fun getSeries(): List<Serie> = series.toList()
+    fun getSeries(): List<Serie> {
+        // Devolver lista sin duplicados basándose en el título
+        return series.distinctBy { it.titulo.lowercase() }
+    }
 
     fun borrarSerie(serie: Serie): Boolean {
        return series.removeIf { it.titulo== serie.titulo }

@@ -8,4 +8,15 @@
     <string name="borrar_serie">Borrar serie</string>
     <string name="ver_listado">Ver listado</string>
     <string name="a_adir_descripcion">Añadir descripcion</string>
+    <string name="nombre_serie">Nombre serie</string>
+    <string name="guardar">Guardar</string>
+    <string name="volver">Volver</string>
+    <string name="mis_series">Mis Series</string>
+    <string name="agregar_serie">Agregar Serie</string>
+    <string name="agregar">Agregar</string>
+    <string name="editar">Editar</string>
+    <string name="borrar">Borrar</string>
+    <string name="editar_descripcion">Editar Descripción</string>
+    <string name="empresa">Empresa</string>
+    <string name="series">Series</string>
 </resources>

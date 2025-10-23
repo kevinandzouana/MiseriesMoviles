@@ -36,46 +36,42 @@
         app:layout_constraintStart_toEndOf="@+id/nombreserie"
         app:layout_constraintTop_toTopOf="@+id/nombreserie" />
 
-    <TextView
-        android:id="@+id/temporada"
+    <Button
+        android:id="@+id/añadir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:text=""
-        app:layout_constraintStart_toEndOf="@+id/textotemporada"
-        app:layout_constraintTop_toTopOf="@+id/nombreserie" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="256dp"
+        android:text="Añadir Serie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/borrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="260dp" />
+        android:layout_marginStart="28dp"
+        android:text="Borrar Serie"
+        app:layout_constraintStart_toEndOf="@+id/añadir"
+        app:layout_constraintTop_toTopOf="@+id/añadir" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/listado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="194dp"
-        tools:layout_editor_absoluteY="257dp" />
+        android:layout_marginStart="36dp"
+        android:text="Listado Series"
+        app:layout_constraintStart_toEndOf="@+id/borrar"
+        app:layout_constraintTop_toTopOf="@+id/añadir" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/descripcionbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="355dp"
-        tools:layout_editor_absoluteY="251dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="514dp"
-        tools:layout_editor_absoluteY="264dp" />
+        android:layout_marginStart="28dp"
+        android:text="Añadir descripcion"
+        app:layout_constraintStart_toEndOf="@+id/listado"
+        app:layout_constraintTop_toTopOf="@+id/añadir" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
