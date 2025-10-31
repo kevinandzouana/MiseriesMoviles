@@ -13,6 +13,7 @@ material = "1.12.0"
 activity = "1.9.2"
 constraintlayout = "2.1.4"
 roomKtx = "2.8.3"
+lifecycleViewmodelKtxVersion = "2.9.4"
 
 [libraries]
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
@@ -28,6 +29,7 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtxVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -9,10 +9,6 @@ object RepositorioSeries {
     init {
         series.add(Serie("Stranger Things",5,"Netflix","Serie de terror juvenil"))
     }
-    fun size() = series.size
-
-    val numSerie: Int
-        get()= series.size
 
     fun getSerie(id:Int) = series[id]
 

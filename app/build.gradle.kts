@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.viewmodel"
+    namespace = "com.example.miseries"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.viewmodel"
+        applicationId = "com.example.miseries"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -49,6 +49,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.lifecycle.viewmodel.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
